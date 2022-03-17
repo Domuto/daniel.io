@@ -86,9 +86,10 @@ h1, h2, h3, h4, h5, h6 {
   animation: animate-preloader 1s linear infinite;
 }
 
-@-webkit-keyframes animate-preloader {
-  50% {
-    transform: rotate(50deg);
+@-webkit-
+  frames animate-preloader {
+  0% {
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
@@ -96,11 +97,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes animate-preloader {
-  50% {
-    transform: rotate(50deg);
+  0% {
+    transform: rotate(0deg);
   }
-  10% {
-    transform: rotate(36deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
 /*--------------------------------------------------------------
@@ -108,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 80 !important;
+    transition-delay: 10000 !important;
   }
 }
 /*--------------------------------------------------------------
